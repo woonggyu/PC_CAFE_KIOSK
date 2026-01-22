@@ -1,0 +1,112 @@
+/* 회원가입 컨테이너 */
+.join-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+}
+
+/* 회원가입 박스 */
+.join-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.join-title {
+    margin-bottom: 30px;
+    color: #61dafb;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 입력 그룹 */
+.join-input-group {
+    margin-bottom: 15px;
+}
+
+.join-input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.join-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.join-input:focus {
+    border-color: #61dafb;
+    outline: none;
+}
+
+/* 성별 선택 버튼 그룹 */
+.gender-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.gender-btn {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #888;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.gender-btn.active {
+    border-color: #61dafb;
+    color: #61dafb;
+    background-color: rgba(97, 218, 251, 0.1);
+}
+
+/* 가입 버튼 */
+.join-submit-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #61dafb;
+    color: #121212;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.join-submit-btn:hover {
+    background-color: #4fa8c7;
+}
+
+.join-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+.login-link {
+    color: #61dafb;
+    text-decoration: none;
+    margin-left: 5px;
+}

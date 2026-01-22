@@ -1,0 +1,89 @@
+/* 메인 배경 (PC방 바탕화면 느낌) */
+.pc-main-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+/* 오른쪽 고정 위젯 (관리창) */
+.pc-widget {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid #61dafb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.widget-header {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seat-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #61dafb;
+}
+
+/* 정보 섹션 */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.info-label { color: #aaa; }
+.info-value { font-weight: bold; }
+
+/* 남은 시간 강조 */
+.remain-time-box {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+    border: 1px solid #444;
+}
+
+.remain-time-box .time {
+    font-size: 32px;
+    color: #f44336;
+    font-weight: bold;
+    display: block;
+}
+
+/* 하단 버튼 그룹 */
+.widget-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.widget-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.widget-btn:hover { background-color: #444; }
+.btn-exit { background-color: #f44336; color: white; grid-column: span 2; }
+.btn-exit:hover { background-color: #d32f2f; }

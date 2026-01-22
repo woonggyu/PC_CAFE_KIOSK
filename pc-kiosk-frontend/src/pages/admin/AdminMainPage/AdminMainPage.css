@@ -1,0 +1,73 @@
+/* 관리자 메인 컨테이너 */
+.admin-main-container {
+    background-color: #121212;
+    min-height: 100vh;
+    padding: 50px;
+    color: white;
+}
+
+/* 상단 헤더 */
+.admin-main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.admin-main-header h1 {
+    color: #61dafb;
+    margin: 0;
+}
+
+/* 로그아웃 버튼 */
+.admin-logout-btn {
+    background-color: transparent;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.admin-logout-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+/* 메뉴 그리드 */
+.admin-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 메뉴 카드 공통 스타일 */
+.admin-menu-card {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.admin-menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.admin-menu-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.admin-menu-card p {
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+}

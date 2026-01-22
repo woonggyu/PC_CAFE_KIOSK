@@ -1,0 +1,113 @@
+.admin-seat-container {
+    padding: 30px;
+    background-color: #121212;
+    min-height: 100vh;
+    color: white;
+}
+
+.admin-seat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+.back-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-seat-title {
+    margin: 0;
+    color: #61dafb;
+}
+
+/* 좌석 그리드 레이아웃 */
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 15px;
+}
+
+.seat-card {
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #222;
+    border: 1px solid #444;
+}
+
+.seat-card.using {
+    border: 2px solid #f44336;
+    background-color: #2d1a1a;
+}
+
+.seat-no { font-size: 12px; color: #888; margin-bottom: 5px; }
+.user-id { font-size: 14px; font-weight: bold; color: #61dafb; }
+.remain-time { font-size: 12px; color: #f44336; margin-top: 5px; }
+.empty-text { font-size: 12px; color: #444; }
+
+/* 제어 모달 */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.control-modal {
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 320px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-label {
+    display: block;
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.admin-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.modal-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 버튼 스타일 */
+.btn-on { background-color: #4caf50; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+.btn-add { background-color: #2196f3; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+.btn-off { background-color: #f44336; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+.btn-close { background-color: #555; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; }
